@@ -343,42 +343,55 @@
         </section>
 
 
-        <form id="formContato" action="https://formsubmit.co/64c618c9ee77564f46233dbac630a310" method="POST">
-            <!-- Configurações escondidas -->
-            <input type="hidden" name="_next" value="#">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="📩 Nova mensagem do site Marcele Nunes">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_autoresponse" value="Olá! Recebemos sua mensagem no site da Marcele Nunes. Em breve, nossa equipe entrará em contato com você. Agradecemos o contato!">
+        <section class="contato-section" id="contato">
+            <div class="contato-container">
+              <h2 class="contato-titulo">Entre em Contato</h2>
+              <p class="contato-subtitulo">Estamos prontos para te ajudar!</p>
           
-            <!-- Campos do formulário -->
-            <div class="mb-4">
-              <label for="nome" class="form-label fw-semibold">Nome</label>
-              <input type="text" name="nome" id="nome" class="form-control shadow-sm" placeholder="Seu nome completo" required>
-            </div>
+              <form
+                id="formContato"
+                action="https://formsubmit.co/64c618c9ee77564f46233dbac630a310"
+                method="POST"
+                class="form-box"
+              >
+                <!-- Configurações ocultas -->
+                <input type="hidden" name="_next" value="#">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="📩 Nova mensagem do site Marcele Nunes">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_autoresponse" value="Olá! Recebemos sua mensagem no site da Marcele Nunes. Em breve, nossa equipe entrará em contato com você. Agradecemos o contato!">
           
-            <div class="mb-4">
-              <label for="email" class="form-label fw-semibold">Email</label>
-              <input type="email" name="email" id="email" class="form-control shadow-sm" placeholder="seu@email.com" required>
-            </div>
+                <div class="input-group">
+                  <label for="nome">Nome</label>
+                  <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+                </div>
           
-            <div class="mb-4">
-              <label for="mensagem" class="form-label fw-semibold">Mensagem</label>
-              <textarea name="mensagem" id="mensagem" class="form-control shadow-sm" placeholder="Escreva sua mensagem aqui..." rows="5" required></textarea>
-            </div>
+                <div class="input-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                </div>
           
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary px-5 py-2 fw-bold rounded-pill shadow-sm">Enviar Mensagem</button>
+                <div class="input-group">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea name="mensagem" id="mensagem" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+                </div>
+          
+                <div class="btn-container">
+                  <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </div>
+              </form>
             </div>
-          </form>
+          </section>
+          
+          
           
           <!-- Modal de Sucesso -->
           <div id="modalSucesso" class="modal-container">
             <div class="modal-content">
               <img src="imagenscontabilidade/logo.png" alt="Logo Marcele Nunes" class="logo">
               <h2>Mensagem enviada com sucesso!</h2>
-              <p>Obrigado por entrar em contato com a <strong>Marcele Nunes</strong>.</p>
-              <button onclick="fecharModal()">OK</button>
+              <p>Obrigado por entrar em contato com <strong>Marcele Nunes</strong>. Em breve responderemos.</p>
+              <button class="btn-fechar" onclick="fecharModal()">OK</button>
             </div>
           </div>
           
