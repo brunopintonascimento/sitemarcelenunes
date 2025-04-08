@@ -12,6 +12,17 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       }
     })
   })
+
+  document.addEventListener('click', function (event) {
+    const navbar = document.getElementById('navbarMarcele');
+    const isClickInside = navbar.contains(event.target);
+    const isToggler = event.target.closest('.navbar-toggler');
+
+    if (!isClickInside && !isToggler && navbar.classList.contains('show')) {
+      const collapse = bootstrap.Collapse.getInstance(navbar);
+      collapse.hide();
+    }
+  });
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("formContato");
   
