@@ -44,7 +44,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       });
     });
   });
-  
+  //
   function fecharModal() {
     document.getElementById("modalSucesso").style.display = "none";
   }
@@ -57,5 +57,18 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     if (localStorage.getItem('cookiesAccepted')) {
       document.getElementById('cookie-banner').style.display = 'none';
     }
-  };
+  };//
+   // Mostrar o aviso se ainda não foi aceito
+   window.addEventListener("load", function () {
+    if (!localStorage.getItem("cookiesAccepted")) {
+      document.getElementById("cookieConsent").classList.remove("d-none");
+    }
+  });
+
+  // Ao aceitar, guardar escolha e ocultar aviso
+  document.getElementById("acceptCookies").addEventListener("click", function () {
+    localStorage.setItem("cookiesAccepted", "true");
+    document.getElementById("cookieConsent").classList.add("d-none");
+  });
+
   

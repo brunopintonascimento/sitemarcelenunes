@@ -2,123 +2,163 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Metatags essenciais -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Marcele Nunes</title>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <meta name="robots" content="index, follow">
+    <title>Marcele Vieira Nunes | Contadora Especialista em Planejamento Tributário</title>
+    <meta name="description"
+        content="Contadora especialista em serviços fiscais, abertura de empresas, planejamento tributário e consultoria personalizada. Atendimento online em todo o Brasil." />
+    <meta name="keywords"
+        content="contadora, planejamento tributário, abertura de empresa, contabilidade online, MEI, ME, Marcele Nunes" />
+    <meta name="author" content="Marcele Vieira Nunes" />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#00c853" />
+
+    <!-- Segurança -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Marcele Vieira Nunes | Contadora Especialista" />
+    <meta property="og:description"
+        content="Serviços contábeis completos e personalizados. Atendimento online em todo o Brasil." />
+    <meta property="og:image" content="https://marcelenunescontadora.netlify.app/imagenscontabilidade/og-marcele.jpg" />
+    <meta property="og:url" content="https://marcelenunescontadora.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Marcele Vieira Nunes | Contadora Especialista" />
+    <meta name="twitter:description"
+        content="Serviços contábeis completos e personalizados. Atendimento online em todo o Brasil." />
+    <meta name="twitter:image"
+        content="https://marcelenunescontadora.netlify.app/imagenscontabilidade/og-marcele.jpg" />
+
+    <!-- Favicon e ícones para dispositivos Apple -->
     <link rel="icon" type="image/png" href="imagenscontabilidade/logo.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="apple-touch-icon" href="imagenscontabilidade/logo.png" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Bootstrap Icons (se ainda não tiver) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- AOS (animação ao rolar a página) -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Estilos externos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <!-- Estilo personalizado -->
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css" />
 
-
-
-
+    <!-- Scripts -->
     <script defer src="script.js"></script>
+
+    <!-- Google Analytics (personalizar se desejar usar) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+    -->
 </head>
+
+
+
 
 <body>
     <header class="main-header fixed-top">
         <nav class="navbar navbar-expand-lg py-3 container">
-          <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
-            <img src="imagenscontabilidade/logo.png" alt="Logo Marcele Nunes"
-              class="navbar-logo shadow-sm"
-              loading="lazy"
-              onerror="this.onerror=null;this.src='https://via.placeholder.com/150?text=Logo';" />
-            <span class="fw-bold text-dark-emphasis fs-5">Marcele Nunes</span>
-          </a>
-      
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarMarcele" aria-controls="navbarMarcele" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse justify-content-end animate__animated animate__fadeInDown"
-            id="navbarMarcele">
-            <ul class="navbar-nav text-uppercase fw-semibold gap-lg-4">
-              <li class="nav-item"><a class="nav-link nav-animated" href="#inicio">Início</a></li>
-              <li class="nav-item"><a class="nav-link nav-animated" href="#sobre">Sobre</a></li>
-              <li class="nav-item"><a class="nav-link nav-animated" href="#servicos">Serviços</a></li>
-              <li class="nav-item"><a class="nav-link nav-animated" href="#depoimentos">Depoimentos</a></li>
-              <li class="nav-item"><a class="nav-link nav-animated" href="#contato">Contato</a></li>
-            </ul>
-          </div>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                <picture>
+                    <source srcset="imagenscontabilidade/logowebp1.webp" type="image/webp">
+                    <img src="imagenscontabilidade/logowebp1.webp" alt="Logo Marcele Nunes"
+                        class="navbar-logo shadow-sm" loading="lazy"
+                        onerror="this.onerror=null;this.src='https://via.placeholder.com/150?text=Logo';" />
+                </picture>
+                <span class="fw-bold text-dark-emphasis fs-5">Marcele Nunes</span>
+            </a>
+
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMarcele" aria-controls="navbarMarcele" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end animate__animated animate__fadeInDown"
+                id="navbarMarcele">
+                <ul class="navbar-nav text-uppercase fw-semibold gap-lg-4">
+                    <li class="nav-item"><a class="nav-link nav-animated" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link nav-animated" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link nav-animated" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link nav-animated" href="#depoimentos">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-animated" href="#contato">Contato</a></li>
+                </ul>
+            </div>
         </nav>
-      </header>
+    </header>
 
 
 
     <main>
         <section id="inicio" class="py-5 d-flex align-items-center"
-            style="min-height: 100vh; background: linear-gradient(135deg, #f0f7ff, #ffffff);">
+            style="min-height: 100vh; background: linear-gradient(135deg, #e3f2fd, #ffffff);">
             <div class="container">
                 <div class="row align-items-center">
 
                     <!-- Coluna do conteúdo -->
-                    <div class="col-md-6 text-start">
-                        <h1 class="display-4 fw-bold mb-3 text-primary">Soluções Contábeis para Pequenos e Grandes
-                            Negócios</h1>
-                        <p class="lead text-secondary mb-4">Cuidamos da burocracia para você focar no crescimento da sua
-                            empresa.</p>
+                    <div class="col-lg-6 text-start">
+                        <h1 class="display-4 fw-bold mb-4 text-primary">
+                            Contabilidade Inteligente para Pequenos e Grandes Negócios
+                        </h1>
+                        <p class="lead text-dark mb-4">
+                            Deixe a parte burocrática com a gente. Você foca no crescimento da sua empresa enquanto
+                            cuidamos da sua contabilidade com precisão, agilidade e economia tributária.
+                        </p>
 
                         <ul class="list-unstyled text-dark">
                             <li class="d-flex align-items-start mb-3">
-                                <span class="me-3 text-success fs-4">✔</span>
-                                <span>Planos personalizados para o seu tipo de negócio.</span>
+                                <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                                <span>Planos personalizados conforme o porte e segmento do seu negócio.</span>
                             </li>
                             <li class="d-flex align-items-start mb-3">
-                                <span class="me-3 text-success fs-4">✔</span>
-                                <span>Atendimento por especialistas no seu segmento.</span>
+                                <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                                <span>Atendimento humanizado e feito por especialistas experientes.</span>
                             </li>
                             <li class="d-flex align-items-start mb-3">
-                                <span class="me-3 text-success fs-4">✔</span>
-                                <span>Fale como preferir: WhatsApp, telefone, chat ou e-mail.</span>
+                                <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                                <span>Comunique-se como preferir: WhatsApp, telefone, e-mail ou chat.</span>
                             </li>
                             <li class="d-flex align-items-start mb-3">
-                                <span class="me-3 text-success fs-4">✔</span>
-                                <span>Regularizamos sua empresa com o mínimo de impostos.</span>
+                                <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                                <span>Redução legal de impostos e regularização sem complicações.</span>
                             </li>
                         </ul>
 
-                        <a href="https://wa.me/5521997377863?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20contabilidade%20oferecidos%20no%20site." 
-                        class="btn btn-lg px-4 py-3 mt-3 shadow"
-                        style="background: linear-gradient(135deg, #00c853, #43a047); color: white; border: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease;">
-                        📲 Comece agora no WhatsApp
-                     </a>
-                     
+                        <a href="https://wa.me/5521997377863?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20contabilidade%20oferecidos%20no%20site."
+                            class="btn btn-lg px-4 py-3 mt-4 shadow animate__animated animate__pulse animate__infinite"
+                            style="background: linear-gradient(135deg, #00c853, #43a047); color: white; border-radius: 50px; font-weight: 600;">
+                            📲 Fale com a contadora agora no WhatsApp
+                        </a>
                     </div>
 
+
                     <!-- Coluna da imagem -->
-                    <div class="col-md-6 text-center mt-4 mt-md-0">
-                        <img src="imagenscontabilidade/marcele1.jpg" alt="Contadora"
-                            class="img-fluid rounded-4 shadow-lg" style="max-height: 500px;">
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                        <picture>
+                            <source srcset="imagenscontabilidade/marcelewebp1.webp" type="image/webp">
+                            <img src="imagenscontabilidade/marcelewebp1.webp"
+                                alt="Contadora Marcele Vieira Nunes atendendo cliente"
+                                class="img-fluid rounded-4 shadow-lg" style="max-height: 500px;" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://via.placeholder.com/500x500?text=Imagem';" />
+                        </picture>
                     </div>
+
 
                 </div>
             </div>
         </section>
+
 
 
 
@@ -129,53 +169,61 @@
 
                     <!-- Foto da contadora -->
                     <div class="col-md-5 mb-4 mb-md-0">
-                        <img src="imagenscontabilidade/marcele2.jpg" alt="Marcele Vieira Nunes"
-                            class="img-fluid rounded-4 shadow">
+                        <picture>
+                            <source srcset="imagenscontabilidade/marcelewebp2.webp" type="image/webp">
+                            <img src="imagenscontabilidade/marcelewebp2.webp" alt="Marcele Vieira Nunes"
+                                class="img-fluid rounded-4 shadow" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://via.placeholder.com/400x400?text=Imagem+Indisponível';">
+                        </picture>
                     </div>
 
-                    <!-- Texto sobre -->
+
+                    <!-- Texto sobre a contadora -->
                     <div class="col-md-7">
                         <h2 class="mb-4 fw-semibold text-primary fs-3">Sobre Marcele Vieira Nunes</h2>
 
-                        <p class="text-muted mb-3">
+                        <p class="text-muted mb-3" style="text-align: justify;">
                             Olá! Sou a <strong>Marcele Vieira Nunes</strong>, apaixonada por números, pessoas e
                             propósito.
-                            Atuo como <strong>contadora, tributarista</strong> e <strong>perita contábil</strong>,
-                            unindo técnica, experiência e sensibilidade
-                            para oferecer um serviço que vai muito além dos balanços financeiros.
+                            Atuo como <strong>contadora</strong>, <strong>tributarista</strong> e <strong>perita
+                                contábil</strong>,
+                            unindo técnica, experiência e sensibilidade para oferecer um serviço que vai muito além dos
+                            balanços financeiros.
                         </p>
 
-                        <p class="text-muted mb-3">
+                        <p class="text-muted mb-3" style="text-align: justify;">
                             Com especialização em <strong>Gestão Tributária</strong>, ajudo empresas e empreendedores a
-                            organizarem sua vida fiscal, pagarem menos impostos (de forma legal, claro!) e tomarem
-                            decisões com mais segurança e tranquilidade.
+                            organizarem sua vida fiscal, reduzirem a carga tributária de forma legal e tomarem decisões
+                            com mais
+                            segurança e tranquilidade.
                         </p>
 
-                        <p class="text-muted mb-3">
-                            Sou sócia da <strong>
-                                <a href="https://www.instagram.com/recoverytax3/" target="_blank"
-                                    class="text-decoration-none text-primary">
-                                    @recoverytax3
-                                </a>
-                            </strong>, onde atuo com uma equipe comprometida em trazer soluções inteligentes e
-                            estratégicas para cada cliente.
-                            Também lidero com muito amor o <strong>
-                                <a href="https://www.instagram.com/projeto_social_genesis/" target="_blank"
-                                    class="text-decoration-none text-primary">
-                                    @projeto_social_genesis
-                                </a>
-                            </strong>, porque acredito que o conhecimento só tem valor quando é usado para transformar
-                            vidas.
+                        <p class="text-muted mb-3" style="text-align: justify;">
+                            Sou sócia da
+                            <a href="https://www.instagram.com/recoverytax3/" target="_blank"
+                                class="text-decoration-none text-primary fw-semibold">
+                                @recoverytax3
+                            </a>,
+                            onde atuo com uma equipe comprometida em oferecer soluções contábeis inteligentes e
+                            personalizadas.
+                            Também lidero o
+                            <a href="https://www.instagram.com/projeto_social_genesis/" target="_blank"
+                                class="text-decoration-none text-primary fw-semibold">
+                                @projeto_social_genesis
+                            </a>,
+                            um projeto social com propósito, porque acredito que conhecimento só tem valor quando é
+                            usado para
+                            transformar vidas.
                         </p>
 
-                        <p class="text-muted mb-3">
+                        <p class="text-muted mb-3" style="text-align: justify;">
                             <i class="bi bi-heart-fill text-danger me-2"></i> Cristã, casada, mãe e vó de um doguinho
                             lindo 🐶.
                             Vivo cada papel com gratidão, fé e dedicação. Acredito que cuidar da contabilidade de alguém
-                            é, antes de tudo, cuidar de sonhos, conquistas e histórias.
+                            é, acima de tudo, cuidar de sonhos, conquistas e histórias.
                         </p>
 
-                        <p class="text-muted mb-0">
+                        <p class="text-muted mb-0" style="text-align: justify;">
                             <strong>Seja bem-vindo(a) ao meu espaço.</strong> Vamos conversar?
                         </p>
                     </div>
@@ -183,6 +231,16 @@
                 </div>
             </div>
         </section>
+        <!-- Seção com contador -->
+        <section id="contador-atendimentos" class="py-5 bg-light text-center">
+            <div class="container">
+                <h2 class="text-primary fw-bold mb-4">+5.000 Atendimentos Realizados</h2>
+                <div class="display-1 fw-bold text-success" id="counter">0</div>
+                <p class="text-muted fs-5 mt-2">Experiência e confiança em cada atendimento 💼</p>
+            </div>
+        </section>
+
+
 
 
         <section id="servicos" class="py-5 bg-light">
@@ -319,6 +377,22 @@
                 </div>
 
         </section>
+        <section class="py-5 bg-light text-center">
+            <div class="container">
+                <h2 class="fw-bold text-primary mb-3">Atendimento em Todo o Brasil .</h2>
+                <p class="text-muted mb-4 fs-5">
+                    Atuamos com excelência em todos os estados, levando soluções contábeis para o Brasil inteiro.
+                </p>
+
+                <div class="br-map mx-auto" style="max-width: 600px;">
+                    <img src="imagenscontabilidade/Brazil_Political_Map.svg" alt="Mapa do Brasil"
+                        class="img-fluid w-100" loading="lazy">
+
+               
+        </section>
+
+
+
 
 
         <section id="instagram" class="py-5 bg-light">
@@ -355,119 +429,132 @@
 
         <section class="contato-section" id="contato">
             <div class="contato-container">
-              <h2 class="contato-titulo">Entre em Contato</h2>
-              <p class="contato-subtitulo">Estamos prontos para te ajudar!</p>
-          
-              <form
-                id="formContato"
-                action="https://formsubmit.co/64c618c9ee77564f46233dbac630a310"
-                method="POST"
-                class="form-box"
-              >
-                <!-- Configurações ocultas -->
-                <input type="hidden" name="_next" value="#">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="📩 Nova mensagem do site Marcele Nunes">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_autoresponse" value="Olá! Recebemos sua mensagem no site da Marcele Nunes. Em breve, nossa equipe entrará em contato com você. Agradecemos o contato!">
-          
-                <div class="input-group">
-                  <label for="nome">Nome</label>
-                  <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
-                </div>
-          
-                <div class="input-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" placeholder="seu@email.com" required>
-                </div>
-          
-                <div class="input-group">
-                  <label for="mensagem">Mensagem</label>
-                  <textarea name="mensagem" id="mensagem" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
-                </div>
-                
-          
-                <div class="btn-container">
-                  <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-                </div>
-              </form>
+                <h2 class="contato-titulo">Entre em Contato</h2>
+                <p class="contato-subtitulo">Estamos prontos para te ajudar!</p>
+
+                <form id="formContato" action="https://formsubmit.co/64c618c9ee77564f46233dbac630a310" method="POST"
+                    class="form-box">
+                    <!-- Configurações ocultas -->
+                    <input type="hidden" name="_next" value="#">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="📩 Nova mensagem do site Marcele Nunes">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_autoresponse"
+                        value="Olá! Recebemos sua mensagem no site da Marcele Nunes. Em breve, nossa equipe entrará em contato com você. Agradecemos o contato!">
+
+                    <div class="input-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="4" placeholder="Escreva sua mensagem..."
+                            required></textarea>
+                    </div>
+
+
+                    <div class="btn-container">
+                        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    </div>
+                </form>
             </div>
-          </section>
-          
-          
-          
-          <!-- Modal de Sucesso -->
-          <div id="modalSucesso" class="modal-container">
+        </section>
+
+
+
+        <!-- Modal de Sucesso -->
+        <div id="modalSucesso" class="modal-container">
             <div class="modal-content">
-              <img src="imagenscontabilidade/logo.png" alt="Logo Marcele Nunes" class="logo">
-              <h2>Mensagem enviada com sucesso!</h2>
-              <p>Obrigado por entrar em contato com <strong>Marcele Nunes</strong>. Em breve responderemos.</p>
-              <button class="btn-fechar" onclick="fecharModal()">OK</button>
+                <img src="imagenscontabilidade/logo.png" alt="Logo Marcele Nunes" class="logo">
+                <h2>Mensagem enviada com sucesso!</h2>
+                <p>Obrigado por entrar em contato com <strong>Marcele Nunes</strong>. Em breve responderemos.</p>
+                <button class="btn-fechar" onclick="fecharModal()">OK</button>
             </div>
-          </div>
-          
+        </div>
+
 
     </main>
-    <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #212529; color: #fff; text-align: center; padding: 10px; z-index: 9999;">
-        Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
+    <div id="cookie-banner"
+        style="position: fixed; bottom: 0; width: 100%; background: #212529; color: #fff; text-align: center; padding: 10px; z-index: 9999;">
+        Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa
         <a href="#" style="color: #00c853;">Política de Privacidade</a>.
-        <button onclick="acceptCookies()" style="margin-left: 10px; background: #00c853; color: #fff; border: none; padding: 5px 10px; border-radius: 5px;">Aceitar</button>
-      </div>
+        <button onclick="acceptCookies()"
+            style="margin-left: 10px; background: #00c853; color: #fff; border: none; padding: 5px 10px; border-radius: 5px;">Aceitar</button>
+    </div>
 
     <footer class="bg-dark text-white pt-5 pb-4 mt-5">
         <div class="container text-center text-md-start">
-      
-          <!-- Grid -->
-          <div class="row text-center text-md-start">
-      
-            <!-- Sobre a contadora -->
-            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 fw-bold text-info">Marcele Vieira Nunes</h5>
-              <p>
-                Contadora especializada em serviços fiscais, abertura de empresas, planejamento tributário, folha de pagamento, consultoria MEI, ME e suporte contábil personalizado. Atendimento online em todo o Brasil.
-              </p>
-            </div>
-      
-            <!-- Contatos -->
-            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 fw-bold text-info">Contato</h5>
-              <p><i class="bi bi-envelope me-2"></i> <a href="mailto:marcelevnunes@gmail.com" class="text-white text-decoration-none">marcelevnunes@gmail.com</a></p>
-              <p><i class="bi bi-telephone me-2"></i> <a href="tel:+5521997377863" class="text-white text-decoration-none">(21) 99737-7863</a></p>
-              <p><i class="bi bi-geo-alt me-2"></i> Atendimento 100% online</p>
-            </div>
-      
-            <!-- Redes sociais -->
-            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 fw-bold text-info">Redes sociais</h5>
-              <a href="https://instagram.com/marcele_v_nunes" target="_blank" class="text-white fs-5 me-3">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a href="https://wa.me/5521997377863?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20contabilidade%20oferecidos." target="_blank" class="text-white fs-5 me-3">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-            </div>
-          </div>
-      
-          <hr class="my-4 text-light">
-      
-          <!-- Créditos -->
-          <div class="text-center">
-            <p class="mb-1 fw-semibold">&copy; 2025 Contadora Marcele Vieira Nunes - Todos os direitos reservados.</p>
-            <p class="small">
-              Desenvolvido por 
-              <a href="https://www.instagram.com/digitalcombruno/" target="_blank" class="text-info fw-bold text-decoration-none">
-                @digitalcombruno
-              </a>
-            </p>
-          </div>
-      
-        </div>
-      </footer>
-      
-    
 
-    <a href="https://wa.me/5521997377863?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20contabilidade%20oferecidos%20no%20site." target="_blank" class="whatsapp-float"
-        aria-label="Converse conosco no WhatsApp">
+            <!-- Grid -->
+            <div class="row text-center text-md-start">
+
+                <!-- Sobre a contadora -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-info">Marcele Vieira Nunes</h5>
+                    <p>
+                        Contadora com expertise em serviços fiscais, abertura e regularização de empresas, planejamento
+                        tributário, gestão de folha de pagamento, consultoria especializada para MEI e ME, além de
+                        suporte contábil personalizado. Atende de forma 100% online em todo o território nacional, em
+                        total conformidade com as normas do Conselho Regional de Contabilidade (CRC).
+                    </p>
+                </div>
+
+                <!-- Contatos -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-info">Contato</h5>
+                    <p><i class="bi bi-envelope me-2"></i> <a href="mailto:marcelevnunes@gmail.com"
+                            class="text-white text-decoration-none">marcelevnunes@gmail.com</a></p>
+                    <p><i class="bi bi-telephone me-2"></i> <a href="tel:+5521997377863"
+                            class="text-white text-decoration-none">(21) 99737-7863</a></p>
+                    <p><i class="bi bi-geo-alt me-2"></i> Atendimento 100% online</p>
+
+
+                </div>
+
+                <!-- Redes sociais -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-info">Redes sociais</h5>
+                    <a href="https://instagram.com/marcele_v_nunes" target="_blank" class="text-white fs-5 me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5521997377863?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20contabilidade%20oferecidos."
+                        target="_blank" class="text-white fs-5 me-3">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="my-4 text-light">
+
+            <!-- Créditos -->
+            <div class="text-center">
+                <p class="mb-1 fw-semibold">&copy; 2025 Contadora Marcele Vieira Nunes - Todos os direitos reservados.
+                </p>
+                <p class="small">
+                    Desenvolvido por
+                    <a href="https://www.instagram.com/digitalcombruno/" target="_blank"
+                        class="text-info fw-bold text-decoration-none">
+                        @digitalcombruno
+                    </a>
+                    <a href="politica-privacidade.html">Política de Privacidade</a> |
+                    <a href="termos-de-uso.html">Termos de Uso</a>
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <a href="https://wa.me/5521997377863?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20contabilidade%20oferecidos%20no%20site."
+        target="_blank" class="whatsapp-float" aria-label="Converse conosco no WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff" width="28" height="28">
             <path
                 d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
@@ -483,6 +570,56 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counter = document.getElementById('counter');
+            const finalValue = 5000;
+            const duration = 2000; // em milissegundos
+            let started = false;
+
+            const animateCount = () => {
+                let start = 0;
+                const increment = finalValue / (duration / 16);
+
+                const updateCounter = () => {
+                    start += increment;
+                    if (start >= finalValue) {
+                        counter.textContent = '+5.000';
+                    } else {
+                        counter.textContent = '+' + Math.floor(start).toLocaleString('pt-BR');
+                        requestAnimationFrame(updateCounter);
+                    }
+                };
+
+                updateCounter();
+            };
+
+            const startCounting = () => {
+                if (!started) {
+                    started = true;
+                    animateCount();
+                }
+            };
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            startCounting();
+                            obs.disconnect();
+                        }
+                    });
+                }, { threshold: 0.6 });
+
+                observer.observe(document.getElementById('contador-atendimentos'));
+            } else {
+                // Fallback: inicia imediatamente se o navegador for antigo
+                startCounting();
+            }
+        });
+    </script>
+
+
 
 
 </body>
