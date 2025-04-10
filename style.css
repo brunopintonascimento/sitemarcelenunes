@@ -407,5 +407,59 @@
     }
   }
   
-  
+  /* Botões com gradiente */
+  .btn-gradient {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+
+  .btn-gradient-purple {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  }
+
+  .btn-gradient-green {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+  }
+
+  .btn-gradient:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Botão de fechar */
+  .btn-close-modal {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    transition: 0.2s ease;
+  }
+
+  .btn-close-modal:hover {
+    color: #fcb045;
+    transform: scale(1.1);
+  }
+
+  /* Responsivo */
+  @media (max-width: 576px) {
+    #instagramReelsModal .modal-dialog {
+      margin: 1rem;
+    }
+
+    iframe {
+      height: 300px;
+    }
+  }
   

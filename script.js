@@ -71,4 +71,4 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     document.getElementById("cookieConsent").classList.add("d-none");
   });
 
-  
+ 
