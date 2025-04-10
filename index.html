@@ -551,59 +551,61 @@
             </div>
 
         </div>
-<!-- Modal Instagram Reels com CTA -->
+<!-- Modal Instagram Reels Responsivo + CTA -->
 <div class="modal fade" id="instagramReelsModal" tabindex="-1" aria-labelledby="instagramReelsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
-      <div class="modal-content border-0 rounded-4 shadow-lg" id="reelsModalContent" style="cursor: grab;">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+      <div class="modal-content border-0 rounded-4 shadow-lg" id="reelsModalContent" style="cursor: move;">
   
-        <!-- Cabeçalho do Modal -->
-        <div class="modal-header border-0 bg-dark text-white rounded-top-4 px-4 py-2 d-flex justify-content-between align-items-center">
+        <!-- Cabeçalho -->
+        <div class="modal-header border-0 bg-dark text-white rounded-top-4 px-4 py-2">
           <h5 class="modal-title d-flex align-items-center gap-2 mb-0" id="instagramReelsModalLabel">
             <i class="bi bi-play-circle-fill fs-5 text-success"></i> Confira nosso Reels!
           </h5>
-          <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal" aria-label="Fechar">
-            <i class="bi bi-x-lg"></i>
+          <button type="button" class="btn btn-close-white" data-bs-dismiss="modal" aria-label="Fechar" id="closeModalBtn" style="background: transparent; border: none;">
+            <i class="bi bi-x-lg fs-5 text-white"></i>
           </button>
         </div>
   
-        <!-- Corpo do Modal -->
+        <!-- Reels -->
         <div class="modal-body p-0">
           <iframe
+            id="reelsIframe"
             src="https://www.instagram.com/p/DHOoLWvufdM/embed"
-            width="100%" height="360" frameborder="0"
+            width="100%" height="420" frameborder="0"
             scrolling="no" allowfullscreen
             allow="autoplay; encrypted-media"
             style="border: none;"
           ></iframe>
         </div>
   
-        <!-- Rodapé com CTAs -->
+        <!-- Botões CTA -->
         <div class="d-flex flex-column flex-md-row justify-content-center gap-3 px-4 py-3 border-top bg-light rounded-bottom-4">
           <a href="https://instagram.com/marcele_v_nunes" target="_blank"
-            class="btn btn-gradient btn-gradient-purple">
+             class="btn btn-gradient-purple d-flex align-items-center gap-2 px-4 py-2 rounded-pill fw-semibold shadow-sm">
             <i class="bi bi-instagram fs-5"></i> Seguir no Instagram
           </a>
           <a href="https://wa.me/5521997377863?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20contabilidade%20oferecidos."
-            target="_blank"
-            class="btn btn-gradient btn-gradient-green">
+             target="_blank"
+             class="btn btn-gradient-green d-flex align-items-center gap-2 px-4 py-2 rounded-pill fw-semibold shadow-sm">
             <i class="bi bi-whatsapp fs-5"></i> Falar no WhatsApp
           </a>
         </div>
       </div>
     </div>
   </div>
-  !-- Script para mostrar e tornar o modal arrastável -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const reelsModal = new bootstrap.Modal(document.getElementById("instagramReelsModal"));
-    reelsModal.show();
-
+  
+  <!-- Script para exibir automaticamente e mover com o mouse -->
+  <script>
+    window.addEventListener("load", function () {
+      const reelsModal = new bootstrap.Modal(document.getElementById("instagramReelsModal"));
+      reelsModal.show();
+    });
+  
+    // Arrastar modal com mouse
     const modal = document.getElementById("reelsModalContent");
-    if (!modal) return;
-
     let isDragging = false;
     let offset = { x: 0, y: 0 };
-
+  
     modal.addEventListener("mousedown", (e) => {
       isDragging = true;
       offset = {
@@ -612,22 +614,25 @@
       };
       modal.style.position = "absolute";
       modal.style.zIndex = 1056;
-      modal.style.cursor = "grabbing";
     });
-
+  
     document.addEventListener("mouseup", () => {
       isDragging = false;
-      modal.style.cursor = "grab";
     });
-
+  
     document.addEventListener("mousemove", (e) => {
       if (isDragging) {
         modal.style.left = `${e.clientX + offset.x}px`;
         modal.style.top = `${e.clientY + offset.y}px`;
       }
     });
-  });
-</script>
+  
+    // Parar o iframe ao fechar o modal
+    document.getElementById("instagramReelsModal").addEventListener('hidden.bs.modal', function () {
+      const iframe = document.getElementById("reelsIframe");
+      iframe.src = iframe.src; // reinicia o iframe para parar o áudio/vídeo
+    });
+  </script>
   
   
 
